@@ -5,8 +5,8 @@ edition = "2021"
 
 [dependencies]
 axum = "0.8.1"
-serde = "1.0.217"
 tokio = { version = "1.43.0", features = ["full"] }
-
-[dev-dependencies]
-bacon = "3.9.0"
+serde = { version = "1.0", features = ["derive"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+listenfd = "1.0.2"
